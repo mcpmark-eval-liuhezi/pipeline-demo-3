@@ -1,0 +1,11 @@
+name: Smoke Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke check
+        run: echo "pipeline smoke check complete"
